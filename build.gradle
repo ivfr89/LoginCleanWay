@@ -1,0 +1,105 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        kotlin_version = '1.3.11'
+        version_name = '1.0'
+        version_code = 1
+        coroutines_version = '1.1.1'
+        glide_version = '4.7.1'
+        retrofit_version = '2.5.0'
+        appcompat_version = '1.0.2'
+        constraint_version = '1.1.3'
+        cardview_version = '1.0.0'
+        material_version = '1.0.0'
+        leakCanary_version = '1.5'
+        loginInterceptor_version = '3.8.1'
+        architectureComponents_version = '2.0.0-rc01'
+        annotation_version = '1.0.0'
+        materialDrawer_version = '2.0.1'
+        koin_version = '1.0.2'
+        room_version = '2.1.0-alpha04'
+        paging_version = '2.1.0'
+        loadingButton_version = '2.1.4'
+        firebaseCore_version = '16.0.9'
+        firebaseAuth_version = '16.1.0'
+        gmsAuth_version = '16.0.1'
+
+
+        junit_version = '4.12'
+        testRunner_version = '1.0.2'
+        espresso_version = '1.0.2'
+
+
+        mainApplication = [
+                kotlin :                    "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+                kotlinCoroutines:           "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version",
+                kotlinCoroutinesAndroid:    "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version",
+                glide:                      "com.github.bumptech.glide:glide:$glide_version",
+                retrofit:                   "com.squareup.retrofit2:retrofit:$retrofit_version",
+                retrofitConverterGson:      "com.squareup.retrofit2:converter-gson:$retrofit_version",
+                retrofitConverterScalars:   "com.squareup.retrofit2:converter-scalars:$retrofit_version",
+                okHttpLoginInterceptor:     "com.squareup.okhttp3:logging-interceptor:$loginInterceptor_version",
+                materialComponents:         "com.google.android.material:material:$material_version",
+                architectureLifecycle:      "androidx.lifecycle:lifecycle-extensions:$architectureComponents_version",
+                architectureLifecycleKt:    "androidx.lifecycle:lifecycle-compiler:$architectureComponents_version",
+                materialDrawer:             "co.zsmb:materialdrawer-kt:$materialDrawer_version",
+                loadingButton:              "br.com.simplepass:loading-button-android:$loadingButton_version",
+                firebaseCore:               "com.google.firebase:firebase-core:$firebaseCore_version",
+                firebaseAuth:               "com.google.firebase:firebase-auth:$firebaseAuth_version",
+                gmsAuth:                    "com.google.android.gms:play-services-auth:$gmsAuth_version"
+        ]
+
+        androidX = [
+                appCompat:                  "androidx.appcompat:appcompat:$appcompat_version",
+                constraintLayout:           "androidx.constraintlayout:constraintlayout:$constraint_version",
+                cardView:                   "androidx.cardview:cardview:$cardview_version",
+                annotation:                 "androidx.annotation:annotation:$annotation_version",
+                koin:                       "org.koin:koin-androidx-viewmodel:$koin_version",
+                room:                       "androidx.room:room-runtime:$room_version",
+                roomAnnotations:            "androidx.room:room-compiler:$room_version",
+                roomCoroutines:             "androidx.room:room-coroutines:$room_version",
+                roomAnnotationsPersistence: "android.arch.persistence.room:compiler:$room_version",
+                pagingLibrary:              "androidx.paging:paging-runtime-ktx:$paging_version"
+
+
+        ]
+
+        development = [
+                leakCanary:                 "com.squareup.leakcanary:leakcanary-android:${leakCanary_version}",
+                leakCanaryNoop:             "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanary_version}",
+        ]
+
+        testing = [
+                junit:                      "junit:junit:$junit_version",
+                testRunner:                 "com.android.support.test:runner:$testRunner_version",
+                espresso:                   "com.android.support.test:runner:$espresso_version"
+        ]
+    }
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.2.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

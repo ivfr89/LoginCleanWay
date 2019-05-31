@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">VisionAppLogin</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username_success">User %1$s logged success</string>
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+
+    <string name="signup">Sign up</string>
+    <string name="signup_success">User signup success, please check your email address for set your password</string>
+    <string name="recovery_password_success">Recover password success, please check your email</string>
+
+    <string name="go">Go</string>
+    <string name="email_client">Email client</string>
+    <string name="no_account">You do not have an account yet? Signup here</string>
+    <string name="already_account">You already have an account?, login here</string>
+    <string name="select_profile">Who are you?, Select yoor profile</string>
+
+
+
+
+    <!--Common errors-->
+    <string name="no_connection">It seems that you currently don\'t have connectivity on your device, try again</string>
+    <string name="field_error">Field error</string>
+
+
+    <!--RecoverPasswordMessageErrors-->
+    <string name="require_fields_recover_password">Email is a required field for recover the password</string>
+
+
+    <!--LoginUserMessageErrors-->
+    <string name="username_null">There a a problem retrieving the user data, please try again</string>
+    <string name="username_wrong">Wrong username, must contain @</string>
+    <string name="password_wrong">Wrong password , must contain at least 5 characters</string>
+    <string name="require_fields_login">Username and password are require fields</string>
+    <string name="login_401_error">Invalid username and password</string>
+
+    <!--SignUpUserMessageErrors-->
+    <string name="firstname_wrong">Wrong username, must contain at least 3 characters</string>
+    <string name="lastname_wrong">Wrong password, must contain at least 3 characters</string>
+    <string name="email_wrong">Wrong email, must contain at least @</string>
+    <string name="require_fields_signup">Firstname, lastname and password are require fields</string>
+    <string name="signup_401_error">This users already exists, verify the email address</string>
+    <string name="signup_400_error">Something goes wrong, please try again</string>
+    <string name="forgot_my_password">Forgot my password</string>
+    <string name="login_google">Login with Google</string>
+    <string name="welcome_user">Welcome %1$s</string>
+    <string name="logout">Logout</string>
+
+
+</resources>
